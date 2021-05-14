@@ -1,5 +1,0 @@
-#ErrorDocument 404 "Page Not Found"
-
-ErrorDocument 404 /TapeshVasisthInstitute/error404.php
-
-
