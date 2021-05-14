@@ -1,0 +1,144 @@
+
+
+
+/*  start -- design and click effect on navbar ( hamburger )  */
+
+.containnavtoggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1nav, .bar2nav, .bar3nav {
+  width: 35px;
+  height:4px;
+  background-color:#7c32ff;
+  margin: 4px 0;
+  transition: 0.4s;
+  box-shadow:0px 0px 2px 1px purple;
+  border-radius:10px;
+}
+
+.changenavbar .bar1nav {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.changenavbar .bar2nav {opacity: 0;}
+
+.changenavbar .bar3nav {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*  end -- design and click effect on navbar ( hamburger )  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navbarTopWeb 
+{
+  position:fixed;
+  z-index:9000000050;
+  width:100%;
+  top:-130px;
+  transition: top 1s;
+  box-shadow:20px 1px 4px 0px purple;
+  background: linear-gradient(270deg, #c738d8 0%, #7c32ff 100%);
+  opacity: none;
+}
+
+
+.naveDivItemx
+{
+  transition:0.5s;
+  letter-spacing:2px;
+  font-size:11px;
+  color:white;
+}
+
+.naveDivItemx:hover
+{
+  box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.9), 0 6px 14px 1px rgba(0, 0, 0, 0.19);
+  border-radius:5px;
+  transition:0.5s;
+  font-weight: bold;
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+/* start -- progress bar that are present on top of the page together with navbar that run when page scroll from top to bottom  */
+
+.progress-containerxx
+{
+  width: 100%;
+  height:5px;
+  background:transparent;
+  position:fixed;
+  z-index:9000000100;
+  bottom:0px;
+  transition: top 1s;
+}
+
+.progress-barxx 
+{
+  height:5px;
+  width:0%;
+  background: linear-gradient(to top, #008aff,#00ffe7);
+  animation: animateScrollDivtoNav 5s linear infinite;
+  border-radius:20px;
+}
+
+@keyframes animateScrollDivtoNav
+{
+  0%,100%
+  {
+    filter:hue-rotate(0deg);
+  }
+
+    50%
+    {
+      filter:hue-rotate(360deg);
+    }
+}
+
+
+/* end -- progress bar that are present on top of the page together with navbar that run when page scroll from top to bottom  */
+
+
+
+
+
+
+
+
+.glownavprofile {
+  color: orangered;
+  -webkit-animation: glownavprofile 1s ease-in-out infinite alternate;
+  -moz-animation: glownavprofile 1s ease-in-out infinite alternate;
+  animation: glownavprofile 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glownavprofile {
+  from {
+    text-shadow: 0 0 10px orangered, 0 0 10px orangered, 0 0 10px orangered, 0 0 10px orangered, 0 0 10px orangered, 0 0 10px orangered, 0 0 70px orangered;
+  }
